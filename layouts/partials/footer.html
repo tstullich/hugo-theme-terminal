@@ -2,7 +2,11 @@
   <div class="footer__inner">
     {{ if $.Site.Copyright }}
       <div class="copyright copyright--user">
-        <span>{{ $.Site.Copyright | safeHTML }}</span>
+        <span>{{ $.Site.Copyright | safeHTML }}
+        <a href="https://github.com/tstullich"><i class="fa fa-github"></i></a>
+        <a href="https://twitter.com/tstullich"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/timstullich/"><i class="fa fa-linkedin"></i></a>
+        </span>
     {{else}}
       <div class="copyright">
         <span>© {{ now.Year }} Powered by <a href="http://gohugo.io">Hugo</a></span>

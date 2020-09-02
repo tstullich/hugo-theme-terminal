@@ -52,6 +52,9 @@
   {{ partial "posts_pagination.html" . }}
   {{ end }}
 
-  {{ partial "comments.html" . }}
+
+  {{ if .Params.enableComments }}
+      {{ partial "comments.html" . }}
+  {{ end }}
 </div>
 {{ end }}
